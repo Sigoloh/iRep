@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/*.txt
+temp/
+logs/*.log
+logs/controll.json
+dist/
+yarn.lock
