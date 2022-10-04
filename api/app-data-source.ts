@@ -4,13 +4,11 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 export const database = process.env.ENV === 'dev' ?
     new DataSource({
-        type: "mssql",
-        host: '192.168.1.2',
-        port: 1433,
-        username: 'indique',
-        password: 'Kd68Sb$!b88I',
-        database: 'Valenet',
-        options: {encrypt: false},
+        type: "postgres",
+        host: 'postgres-db.captain.localhost',
+        username: 'admin',
+        password: 'admin',
+        database: 'database',
         entities: ["./src/entity/*.ts"],
         migrations: ["./src/migrations/*.ts"],
         logging: false,
