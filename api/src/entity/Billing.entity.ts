@@ -1,7 +1,7 @@
 import {Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn, UpdateResult} from "typeorm";
 import {Resident} from "./Resident.entity";
 
-@Entity()
+@Entity('Billing')
 export class Billing {
 
   @PrimaryGeneratedColumn('uuid')
